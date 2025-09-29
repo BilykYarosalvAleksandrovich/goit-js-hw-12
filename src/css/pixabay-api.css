@@ -61,14 +61,33 @@ main {
   transform: scale(1.03);
 }
 
+/* 🔽 Кнопка Завантажити ще */
+.load-more {
+  display: inline-block;
+  margin: 20px auto;
+  background: #ff3d00;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 12px 24px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.load-more:hover {
+  background: #e63300;
+  transform: translateY(-2px);
+}
+
+/* 🔄 Лоадер (анімований кружок) */
 .loader {
+  margin: 30px auto;
+  border: 6px solid #f3f3f3; /* світло-сірий */
+  border-top: 6px solid #ff3d00; /* червоний */
+  border-radius: 50%;
   width: 40px;
   height: 40px;
-  border: 4px solid #ccc;
-  border-top: 4px solid #0077ff;
-  border-radius: 50%;
   animation: spin 1s linear infinite;
-  margin: 20px auto;
 }
 
 .hidden {
